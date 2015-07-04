@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AwesomeSearch</string>
+
+    <string name="image_cd_back">Back</string>
+    <string name="image_cd_action">Close</string>
+</resources>

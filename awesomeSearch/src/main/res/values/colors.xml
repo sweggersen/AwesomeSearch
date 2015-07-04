@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="black_75">#C0000000</color>
+    <color name="black_62">#99000000</color>
+    <color name="black_54">#85000000</color>
+    <color name="black_33">#52000000</color>
+    <color name="black_12">#19000000</color>
+    <color name="white_54">#85FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="window_background">#EEE</color>
+
+    <color name="blue">#0288D1</color>
+    <color name="my_primary_text">#FFFFFF</color>
+    <color name="text_secondary">@color/black_33</color>
+    <color name="text_primary">#333333</color>
+    <color name="search_underline">#666</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="my_divider">#B6B6B6</color>
+
+    <color name="bg_search_ripple">#99DDDDDD</color>
+    <color name="bg_search_card_shadow">#80CCCCCC</color>
+
+</resources>

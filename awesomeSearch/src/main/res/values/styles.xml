@@ -1,0 +1,21 @@
+<resources>
+
+
+    <style name="Base.Theme.Search" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="AwesomeSearchBaseTheme" parent="Base.Theme.Search">
+        <!-- API SPECIFIC -->
+    </style>
+
+    <style name="AwesomeSearchTheme" parent="AwesomeSearchBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

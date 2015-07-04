@@ -1,0 +1,125 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/category_overlay_root"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/search_bar_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:elevation="4dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:paddingTop="1dp"
+            android:background="@drawable/bg_card_rounded_bottom"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:visibility="invisible"/>
+
+        <info.awesomedevelopment.awesomesearch.AwesomeSearchLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_card_rounded_top"
+            android:visibility="invisible"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/search_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_dark"
+                android:padding="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:rotation="-180"
+                android:alpha="0"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:visibility="invisible"
+                android:background="@drawable/ic_icon_ripple"/>
+
+            <ImageView
+                android:id="@+id/search_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_dark"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:alpha="0"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:visibility="invisible"
+                android:background="@drawable/ic_icon_ripple"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/search_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:textColorHint="@color/black_33"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/search_back"
+                android:layout_toLeftOf="@+id/search_action"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                android:inputType="textFilter|textCapSentences|textNoSuggestions"
+                android:privateImeOptions="nm"
+                android:imeOptions="actionSearch"
+                android:singleLine="true">
+
+                <requestFocus/>
+
+            </android.support.v7.widget.AppCompatEditText>
+        </info.awesomedevelopment.awesomesearch.AwesomeSearchLayout>
+
+        <View
+            android:id="@+id/search_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_search_ripple"
+            android:visibility="invisible"
+            android:alpha="0"
+            android:layout_below="@+id/search_bar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_history"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_card"
+        android:visibility="invisible"
+        android:layout_below="@+id/search_bar_root"
+        android:elevation="4dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
